@@ -1,0 +1,26 @@
+{
+  "name": "simple-db-scheme",
+  "version": "0.0.1",
+  "description": "Simple tool based on D3.js library for making interactive db scheme visualization",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/rollup -c"
+  },
+  "author": "r0di0n0v",
+  "license": "BSD 3-Clause",
+  "dependencies": {
+    "d3": "^5.5.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "rollup": "^0.64.1",
+    "rollup-plugin-terser": "^1.0.1",
+    "rollup-plugin-uglify": "^4.0.0",
+    "rollup-plugin-uglify-es": "0.0.1"
+  }
+}

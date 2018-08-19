@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body, svg, #app {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="../dist/index.css">
+</head>
+<body>
+    <div id="app"></div>
+</body>
+
+<script src="../node_modules/d3/dist/d3.js"></script>
+<script src="../dist/simple-db-scheme.js"></script>
+<script>
+    const data = {
+        tables: {
+            tbl1: {
+                attr: {name: "tbl1", x: 0, y: 0},
+                comment: 'This is table comment',
+                columns: {
+                    COL1: {
+                        type: 'NUMBER',
+                        comment: 'This is column comment',
+                    },
+                    COL2: { type: 'NUMBER' },
+                    COL3: { type: 'NUMBER' },
+                    COL4: { type: 'NUMBER' },
+                }
+            },
+            tbl2: {
+                attr: {name: "tbl2", x: 329, y: 143},
+                columns: {
+                    COL1: { type: 'NUMBER' },
+                    COL2: { type: 'NUMBER' },
+                    COL3: { type: 'NUMBER' },
+                    COL4: { type: 'NUMBER' },
+                }
+            },
+            tbl3: {
+                attr: {name: "tbl3", x: 712, y: 287},
+                columns: {
+                    COL1: { type: 'NUMBER' },
+                    COL2: { type: 'NUMBER' },
+                    COL3: { type: 'NUMBER' },
+                    COL4: { type: 'NUMBER' },
+                }
+            },
+        },
+        links: [
+            [
+                { t: 'tbl1', c: 'COL2' },
+                { t: 'tbl2', c: 'COL4' },
+            ],
+            [
+                { t: 'tbl3', c: 'COL3' },
+                { t: 'tbl2', c: 'COL4' },
+            ],
+        ],
+    };
+
+    simpleDbScheme('#app', data);
+</script>
+
+
+</html>

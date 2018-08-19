@@ -1,0 +1,29 @@
+table {
+    border-collapse: collapse;
+    border: 2px solid #b2b2b2;
+    border-bottom: 4px solid #98bfda;
+    min-width: 120px;
+}
+table tr:nth-child(even) {
+    background-color: #efefef;
+}
+table tr {
+    background-color: #fff;
+}
+table tr>td:nth-child(2) {
+    min-width: 50px;
+}
+table thead {
+    /*cursor: pointer;*/
+}
+table th {
+    background-color: #98bfda;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+table td {
+    padding: 2px 10px;
+}
+table td.anchor {
+    padding: 0;
+}

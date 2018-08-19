@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "indent": 0,
+    "prefer-destructuring": ["error", {
+      "array": false,
+      "object": true
+    }],
+    "no-shadow": ["error", {
+      "allow": ["err", "error", "reply"]
+    }],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "spaced-comment": ["error", "always", { "exceptions": ["language=Oracle"] }],
+    "linebreak-style": ["error", "windows"]
+  },
+  "globals": {
+    "d3": true
+  }
+}
