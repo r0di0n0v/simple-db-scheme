@@ -2,9 +2,7 @@
   "name": "simple-db-scheme",
   "version": "0.0.1",
   "description": "Simple tool based on D3.js library for making interactive db scheme visualization",
-  "directories": {
-    "lib": "lib"
-  },
+  "main": "dist/simple-db-scheme.min.js",
   "scripts": {
     "build": "./node_modules/.bin/rollup -c"
   },
